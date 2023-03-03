@@ -1,7 +1,7 @@
 $("#pilih-kopi").on("change", function() {
     let nilai_dipilih = $(this).val()
     
-    $.get("https://rikikurnia.com/prakerja/api/produk/${nilai_dipilih}").then(function (res){
+    $.get('https://rikikurnia.com/prakerja/api/produk/${nilai_dipilih}').then(function (res){
         var isi_konten = ""
 
         res.data.forEach(item => {
